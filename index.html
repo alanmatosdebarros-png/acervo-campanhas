@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Acervo de Campanhas</title>
+<meta name="description" content="Acervo comentado de campanhas premiadas, de 2010 a 2026, segmentado por mecanismo criativo, tipo de insight, canal, risco e escala de verba.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>▦</text></svg>">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<a class="pula" href="#grade">Ir para o acervo</a>
+
+<header class="topo">
+  <div class="topo-in">
+    <a class="marca" href="#" data-home>
+      <span class="marca-sig">▦</span>
+      <span class="marca-nome">Acervo de Campanhas<em>2010 &rsaquo; 2026</em></span>
+    </a>
+    <div class="busca-wrap">
+      <input id="busca" type="search" placeholder="Buscar campanha, marca, agência, país, ideia" autocomplete="off" spellcheck="false">
+      <button id="limpa-busca" type="button" aria-label="Limpar busca" hidden>&times;</button>
+    </div>
+    <button id="btn-tema" type="button" aria-label="Alternar claro e escuro">◐</button>
+  </div>
+</header>
+
+<main>
+  <section id="vista-lista">
+    <div class="intro">
+      <h1>Um acervo de campanhas premiadas, explicadas por dentro.</h1>
+      <p>Vinte campanhas por ano, de 2010 a 2026, retiradas dos arquivos públicos de vencedores dos festivais. Cada ficha traz contexto, problema de negócio, insight, execução, por que ganhou e o que dá para levar para o próximo briefing. A segmentação vai além de marca e prêmio: cruza mecanismo criativo, tipo de insight, canal de origem, nível de risco e escala de verba.</p>
+      <p class="nota">O ano é o ano de premiação, não o de veiculação. Em 2020 não houve Cannes Lions, e o recorte do ano vem dos outros festivais.</p>
+    </div>
+
+    <div class="filtros" id="filtros">
+      <div class="f-linha anos" id="f-anos"></div>
+      <div class="f-grupos" id="f-grupos"></div>
+      <div class="f-barra">
+        <span id="contador" class="contador"></span>
+        <label class="so-br"><input type="checkbox" id="f-br"> Só Brasil na ficha</label>
+        <select id="ordem" aria-label="Ordenar">
+          <option value="ano-desc">Mais recentes primeiro</option>
+          <option value="ano-asc">Mais antigas primeiro</option>
+          <option value="marca">Por marca</option>
+          <option value="agencia">Por agência</option>
+        </select>
+        <button type="button" id="zera" class="zera">Limpar filtros</button>
+      </div>
+      <div class="chips-ativos" id="chips-ativos"></div>
+    </div>
+
+    <div class="grade" id="grade"></div>
+    <p class="vazio" id="vazio" hidden>Nenhuma campanha com esse cruzamento. Tire um filtro.</p>
+  </section>
+
+  <article id="vista-ficha" hidden></article>
+</main>
+
+<footer class="pe">
+  <p>Acervo montado a partir dos arquivos públicos de vencedores dos festivais. Os textos de análise são originais. Os filmes e peças pertencem às marcas, agências e produtoras creditadas em cada ficha.</p>
+</footer>
+
+<script src="data/taxonomia.js"></script>
+<script src="data/2026.js"></script>
+<script src="data/2025.js"></script>
+<script src="data/2024.js"></script>
+<script src="data/2023.js"></script>
+<script src="data/2022.js"></script>
+<script src="data/2021.js"></script>
+<script src="data/2020.js"></script>
+<script src="data/2019.js"></script>
+<script src="data/2018.js"></script>
+<script src="data/2017.js"></script>
+<script src="data/2016.js"></script>
+<script src="data/2015.js"></script>
+<script src="data/2014.js"></script>
+<script src="data/2013.js"></script>
+<script src="data/2012.js"></script>
+<script src="data/2011.js"></script>
+<script src="data/2010.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
